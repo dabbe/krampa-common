@@ -17,7 +17,7 @@ export const GOAL_TYPES = {
 
   // Achievement goals
   ACHIEVEMENT_PR: "achievement/pr",
-  ACHIEVEMENT_STEPS: "steps/daily",
+  STEPS_DAILY: "steps/daily",
 
   // Other
   MEASUREMENT_BODY: "measurement/body",
@@ -33,7 +33,7 @@ export const GOAL_TYPE_VALUES = [
   GOAL_TYPES.WORKOUT_CARDIO,
   GOAL_TYPES.WORKOUT_OTHER,
   GOAL_TYPES.ACHIEVEMENT_PR,
-  GOAL_TYPES.ACHIEVEMENT_STEPS,
+  GOAL_TYPES.STEPS_DAILY,
   GOAL_TYPES.MEASUREMENT_BODY,
   GOAL_TYPES.CUSTOM_OTHER,
 ] as const;
