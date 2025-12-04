@@ -11,7 +11,7 @@ export const GOAL_TYPES = {
   WEIGHT_MAINTAIN: "weight/maintain",
 
   // Workout goals (distance/time embedded in cardio)
-  WORKOUT_GENERAL: "workout/general",
+  WORKOUT_STRENGTH: "workout/strength",
   WORKOUT_CARDIO: "workout/cardio",
   WORKOUT_OTHER: "workout/other",
 
@@ -29,7 +29,7 @@ export const GOAL_TYPE_VALUES = [
   GOAL_TYPES.WEIGHT_LOSS,
   GOAL_TYPES.WEIGHT_GAIN,
   GOAL_TYPES.WEIGHT_MAINTAIN,
-  GOAL_TYPES.WORKOUT_GENERAL,
+  GOAL_TYPES.WORKOUT_STRENGTH,
   GOAL_TYPES.WORKOUT_CARDIO,
   GOAL_TYPES.WORKOUT_OTHER,
   GOAL_TYPES.ACHIEVEMENT_PR,

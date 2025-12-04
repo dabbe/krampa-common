@@ -20,7 +20,7 @@ npm install @krampa/common
 import { GOAL_TYPES, GOAL_TYPE_VALUES, GoalType } from "@krampa/common";
 
 // Use constants
-const goalType = GOAL_TYPES.WORKOUT_CARDIO; // "workout/cardio"
+const goalType = GOAL_TYPES.WORKOUT_STRENGTH; // "workout/strength"
 
 // Use in TypeScript types
 const myGoal: GoalType = "weight/loss";
