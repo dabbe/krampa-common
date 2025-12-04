@@ -4,3 +4,5 @@
  */
 
 export * from "./goal-types";
+export * from "./invite-status";
+export * from "./challenge-status";
