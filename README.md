@@ -1,11 +1,15 @@
-# @dabbe/krampa-common
+# @krampa/common
+
+[![npm version](https://img.shields.io/npm/v/@krampa/common.svg)](https://www.npmjs.com/package/@krampa/common)
+[![npm downloads](https://img.shields.io/npm/dm/@krampa/common.svg)](https://www.npmjs.com/package/@krampa/common)
+[![license](https://img.shields.io/npm/l/@krampa/common.svg)](https://github.com/dabbe/krampa-common/blob/main/LICENSE)
 
 Shared types and constants for the Krampa fitness challenge app.
 
 ## Installation
 
 ```bash
-npm install @dabbe/krampa-common
+npm install @krampa/common
 ```
 
 ## Usage
@@ -13,7 +17,7 @@ npm install @dabbe/krampa-common
 ### Goal Types
 
 ```typescript
-import { GOAL_TYPES, GOAL_TYPE_VALUES, GoalType } from "@dabbe/krampa-common";
+import { GOAL_TYPES, GOAL_TYPE_VALUES, GoalType } from "@krampa/common";
 
 // Use constants
 const goalType = GOAL_TYPES.FREQUENCY_CARDIO; // "frequency/cardio"
@@ -25,7 +29,7 @@ const myGoal: GoalType = "weight/loss";
 const dbEnum = GOAL_TYPE_VALUES; // Array of all valid goal types
 
 // Type guards
-import { isCardioGoal, isWeightGoal } from "@dabbe/krampa-common";
+import { isCardioGoal, isWeightGoal } from "@krampa/common";
 
 if (isCardioGoal(goal.type)) {
   // Handle cardio-specific logic

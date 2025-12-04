@@ -1,6 +1,6 @@
 {
-  "name": "@dabbe/krampa-common",
-  "version": "0.1.0",
+  "name": "@krampa/common",
+  "version": "0.1.2",
   "description": "Shared types and constants for Krampa fitness challenge app",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

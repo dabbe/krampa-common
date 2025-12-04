@@ -1,5 +1,5 @@
 /**
- * @dabbe/krampa-common
+ * @krampa/common
  * Shared types and constants for Krampa fitness challenge app
  */
 
