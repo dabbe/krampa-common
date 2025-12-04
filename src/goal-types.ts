@@ -1,5 +1,5 @@
 /**
- * Goal type constants for Krampa fitness challenge app
+ * Goal type constants
  * These types follow a category/subtype pattern (e.g., "weight/loss", "workout/cardio")
  */
 

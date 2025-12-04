@@ -1,6 +1,6 @@
 /**
  * @krampa/common
- * Shared types and constants for Krampa fitness challenge app
+ * Shared types and constants
  */
 
 export * from "./goal-types";
