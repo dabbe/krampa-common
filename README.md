@@ -20,20 +20,43 @@ npm install @krampa/common
 import { GOAL_TYPES, GOAL_TYPE_VALUES, GoalType } from "@krampa/common";
 
 // Use constants
-const goalType = GOAL_TYPES.FREQUENCY_CARDIO; // "frequency/cardio"
+const goalType = GOAL_TYPES.WORKOUT_CARDIO; // "workout/cardio"
 
 // Use in TypeScript types
 const myGoal: GoalType = "weight/loss";
 
 // Use for database enum
 const dbEnum = GOAL_TYPE_VALUES; // Array of all valid goal types
+```
 
-// Type guards
-import { isCardioGoal, isWeightGoal } from "@krampa/common";
+### Challenge Status
 
-if (isCardioGoal(goal.type)) {
-  // Handle cardio-specific logic
-}
+```typescript
+import { CHALLENGE_STATUSES, CHALLENGE_STATUS_VALUES, ChallengeStatus } from "@krampa/common";
+
+// Use constants
+const status = CHALLENGE_STATUSES.ONGOING; // "ONGOING"
+
+// Use in TypeScript types
+const challengeStatus: ChallengeStatus = "PENDING";
+
+// Use for database enum
+const dbEnum = CHALLENGE_STATUS_VALUES; // Array of all valid challenge statuses
+```
+
+### Invite Status
+
+```typescript
+import { INVITE_STATUSES, INVITE_STATUS_VALUES, InviteStatus } from "@krampa/common";
+
+// Use constants
+const status = INVITE_STATUSES.ACCEPTED; // "ACCEPTED"
+
+// Use in TypeScript types
+const inviteStatus: InviteStatus = "PENDING";
+
+// Use for database enum
+const dbEnum = INVITE_STATUS_VALUES; // Array of all valid invite statuses
 ```
 
 ## Development
