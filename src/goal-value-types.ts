@@ -21,6 +21,7 @@ export type WorkoutCardioValue = {
   weeklyTarget: number; // e.g., 3 times per week
   weeklyDistance?: number; // km per week
   weeklyTime?: number; // minutes per week
+  workoutTypes: string[]; // e.g., Easy, Threshold, Intervals, Sprints
 };
 
 export type WorkoutOtherValue = {
