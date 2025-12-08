@@ -12,7 +12,7 @@ export type WeightChange = {
 };
 
 export type WeightMaintain = {
-  targetWeight: number;
+  maintenanceWeight: number;
 };
 
 // Workout goals
