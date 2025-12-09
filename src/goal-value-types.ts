@@ -3,18 +3,7 @@
  * Shared between frontend and backend for type safety
  */
 
-// Goal type constants
-export const GoalType = {
-  WEIGHT_LOSS: "weight/loss",
-  WEIGHT_GAIN: "weight/gain",
-  WEIGHT_MAINTAIN: "weight/maintain",
-  WORKOUT_STRENGTH: "workout/strength",
-  WORKOUT_CARDIO: "workout/cardio",
-  WORKOUT_OTHER: "workout/other",
-  STEPS_DAILY: "steps/daily",
-} as const;
-
-export type GoalType = (typeof GoalType)[keyof typeof GoalType];
+import { GOAL_TYPES } from "./goal-types";
 
 // Value types for each goal category (what goes in the JSON column)
 
@@ -57,37 +46,37 @@ type BaseGoal = {};
 
 // Goal types with value field
 export type WeightLossGoal = BaseGoal & {
-  type: typeof GoalType.WEIGHT_LOSS;
+  type: typeof GOAL_TYPES.WEIGHT_LOSS;
   value: WeightChange;
 };
 
 export type WeightGainGoal = BaseGoal & {
-  type: typeof GoalType.WEIGHT_GAIN;
+  type: typeof GOAL_TYPES.WEIGHT_GAIN;
   value: WeightChange;
 };
 
 export type WeightMaintainGoal = BaseGoal & {
-  type: typeof GoalType.WEIGHT_MAINTAIN;
+  type: typeof GOAL_TYPES.WEIGHT_MAINTAIN;
   value: WeightMaintain;
 };
 
 export type WorkoutStrengthGoal = BaseGoal & {
-  type: typeof GoalType.WORKOUT_STRENGTH;
+  type: typeof GOAL_TYPES.WORKOUT_STRENGTH;
   value: WorkoutStrengthValue;
 };
 
 export type WorkoutCardioGoal = BaseGoal & {
-  type: typeof GoalType.WORKOUT_CARDIO;
+  type: typeof GOAL_TYPES.WORKOUT_CARDIO;
   value: WorkoutCardioValue;
 };
 
 export type WorkoutOtherGoal = BaseGoal & {
-  type: typeof GoalType.WORKOUT_OTHER;
+  type: typeof GOAL_TYPES.WORKOUT_OTHER;
   value: WorkoutOtherValue;
 };
 
 export type StepsGoal = BaseGoal & {
-  type: typeof GoalType.STEPS_DAILY;
+  type: typeof GOAL_TYPES.STEPS_DAILY;
   value: StepsGoalValue;
 };
 
