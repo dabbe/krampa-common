@@ -8,13 +8,8 @@ import { GOAL_TYPES } from "./goal-types";
 // Value types for each goal category (what goes in the JSON column)
 
 // Weight goals
-export type WeightChange = {
-  startWeight: number;
+export type WeightValue = {
   targetWeight: number;
-};
-
-export type WeightMaintain = {
-  maintenanceWeight: number;
 };
 
 // Workout goals
@@ -47,17 +42,17 @@ type BaseGoal = {};
 // Goal types with value field
 export type WeightLossGoal = BaseGoal & {
   type: typeof GOAL_TYPES.WEIGHT_LOSS;
-  value: WeightChange;
+  value: WeightValue;
 };
 
 export type WeightGainGoal = BaseGoal & {
   type: typeof GOAL_TYPES.WEIGHT_GAIN;
-  value: WeightChange;
+  value: WeightValue;
 };
 
 export type WeightMaintainGoal = BaseGoal & {
   type: typeof GOAL_TYPES.WEIGHT_MAINTAIN;
-  value: WeightMaintain;
+  value: WeightValue;
 };
 
 export type WorkoutStrengthGoal = BaseGoal & {
