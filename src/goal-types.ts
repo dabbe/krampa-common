@@ -15,6 +15,9 @@ export const GOAL_TYPES = {
   WORKOUT_CARDIO: "workout/cardio",
   WORKOUT_OTHER: "workout/other",
 
+  // New workout type
+  WORKOUT: "workout",
+
   // Achievement goals
   ACHIEVEMENT_PR: "achievement/pr",
   STEPS_DAILY: "steps/daily",
@@ -32,6 +35,7 @@ export const GOAL_TYPE_VALUES = [
   GOAL_TYPES.WORKOUT_STRENGTH,
   GOAL_TYPES.WORKOUT_CARDIO,
   GOAL_TYPES.WORKOUT_OTHER,
+  GOAL_TYPES.WORKOUT,
   GOAL_TYPES.ACHIEVEMENT_PR,
   GOAL_TYPES.STEPS_DAILY,
   GOAL_TYPES.MEASUREMENT_BODY,
