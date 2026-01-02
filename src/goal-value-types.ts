@@ -13,22 +13,9 @@ export type WeightValue = {
 };
 
 // Workout goals
-export type WorkoutCardioValue = {
+export type WorkoutValue = {
   activityName: string;
   weeklyTarget: number; // e.g., 3 times per week
-  weeklyDistance?: number; // km per week
-  weeklyTime?: number; // minutes per week
-  workoutTypes: string[]; // e.g., Easy, Threshold, Intervals, Sprints
-};
-
-export type WorkoutOtherValue = {
-  activityName: string;
-  weeklyTarget: number; // e.g., 3 times per week
-};
-
-export type WorkoutStrengthValue = {
-  weeklyTarget: number; // e.g., 3 times per week
-  workoutTypes: string[]; // e.g., Push, Pull, Legs
 };
 
 // Steps goals
@@ -55,19 +42,9 @@ export type WeightMaintainGoal = BaseGoal & {
   value: WeightValue;
 };
 
-export type WorkoutStrengthGoal = BaseGoal & {
-  type: typeof GOAL_TYPES.WORKOUT_STRENGTH;
-  value: WorkoutStrengthValue;
-};
-
-export type WorkoutCardioGoal = BaseGoal & {
-  type: typeof GOAL_TYPES.WORKOUT_CARDIO;
-  value: WorkoutCardioValue;
-};
-
-export type WorkoutOtherGoal = BaseGoal & {
-  type: typeof GOAL_TYPES.WORKOUT_OTHER;
-  value: WorkoutOtherValue;
+export type WorkoutGoal = BaseGoal & {
+  type: typeof GOAL_TYPES.WORKOUT;
+  value: WorkoutValue;
 };
 
 export type StepsGoal = BaseGoal & {
@@ -80,7 +57,5 @@ export type Goal =
   | WeightLossGoal
   | WeightGainGoal
   | WeightMaintainGoal
-  | WorkoutStrengthGoal
-  | WorkoutCardioGoal
-  | WorkoutOtherGoal
+  | WorkoutGoal
   | StepsGoal;
