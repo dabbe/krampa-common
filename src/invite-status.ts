@@ -4,17 +4,17 @@
 
 // Invite status enum values (matches database enum)
 export const INVITE_STATUSES = {
-  PENDING: "PENDING",
-  ACCEPTED: "ACCEPTED",
-  READY: "READY",
+  INVITED: "INVITED",
+  SETTING_UP: "SETTING_UP",
+  ACTIVE: "ACTIVE",
   DECLINED: "DECLINED",
 } as const;
 
 // Array of all invite status values (for database enum)
 export const INVITE_STATUS_VALUES = [
-  INVITE_STATUSES.PENDING,
-  INVITE_STATUSES.ACCEPTED,
-  INVITE_STATUSES.READY,
+  INVITE_STATUSES.INVITED,
+  INVITE_STATUSES.SETTING_UP,
+  INVITE_STATUSES.ACTIVE,
   INVITE_STATUSES.DECLINED,
 ] as const;
 
