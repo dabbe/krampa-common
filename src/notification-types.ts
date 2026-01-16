@@ -1,19 +1,21 @@
-import { GoalType } from './goal-types';
+import { GoalType } from "./goal-types";
 
 /**
  * Notification types for FCM push notifications
  */
 export enum NotificationType {
-  CHALLENGE_STARTED = 'challenge_started',
-  CHALLENGE_INVITATION = 'challenge_invitation',
-  CHALLENGE_ACCEPTED = 'challenge_accepted',
-  CHALLENGE_DECLINED = 'challenge_declined',
-  CHALLENGE_ENDED = 'challenge_ended',
-  CHALLENGE_EARLY_START = 'challenge_early_start',
-  NEW_LOG_ENTRY = 'new_log_entry',
-  GOAL_ACHIEVED = 'goal_achieved',
-  GOALS_SUBMITTED = 'goals_submitted',
-  CHEER = 'cheer',
+  CHALLENGE_STARTED = "challenge_started",
+  CHALLENGE_INVITATION = "challenge_invitation",
+  CHALLENGE_ACCEPTED = "challenge_accepted",
+  CHALLENGE_DECLINED = "challenge_declined",
+  CHALLENGE_ENDED = "challenge_ended",
+  CHALLENGE_EARLY_START = "challenge_early_start",
+  NEW_LOG_ENTRY = "new_log_entry",
+  GOAL_ACHIEVED = "goal_achieved",
+  GOALS_SUBMITTED = "goals_submitted",
+  CHEER = "cheer",
+  CHALLENGE_START_DELAYED = "challenge_start_delayed",
+  CHALLENGE_CANCELLED = "challenge_cancelled",
 }
 
 /**
